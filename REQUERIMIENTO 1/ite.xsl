@@ -14,11 +14,24 @@
 
       <body>
         <header>
-          <h1>
-            <xsl:value-of select="ite/empresa" />
+          
+          <h1 >
+            
+            <a href="https://www.grupoproeduca.com/"><xsl:value-of select="ite/empresa" /></a>
+            
           </h1>
+
+          
+
           <h2>
+            <a>
+            <xsl:attribute name="href">
+              <xsl:value-of select="ite/@web" />
+            </xsl:attribute>
+           
             <xsl:value-of select="ite/@nombre" />
+          </a>
+           
           </h2>
         </header>
         <div class="ciclos">
@@ -123,20 +136,17 @@
         </div>
       
         <div class="enlaces">
+          
           <a>
             <xsl:attribute name="href">
               <xsl:value-of select="ite/@web" />
             </xsl:attribute>
-            <xsl:value-of select="ite/@nombre" />
-
+           
+            <img src="Imagenes\descarga.png" alt=""/>
           </a>
+          
           <br />
-          <a>
-            <xsl:attribute name="href">
-              <xsl:value-of select="www.proeduca.es" />
-            </xsl:attribute>
-            <xsl:value-of select="ite/empresa" />
-          </a>
+         
         </div>
       
       </div>
@@ -188,7 +198,7 @@
               Muy Positiva
               <br />
               <label for="dirigida">Enviar la encuesta a que persona: </label>
-
+              <br/>
               <select name="dirige" id="env">
                 <option value="director">
                   <xsl:value-of select="ite/director/nombre" />
