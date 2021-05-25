@@ -1,377 +1,385 @@
-*{
-    margin:0;
+* {
+    margin: 0;
     padding: 0;
 }
 
-body{
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 15 px;
-    background-color:antiquewhite;
+    background-color: antiquewhite;
 }
 
-h1 , h2{
+h1,
+h2 {
+    /* colocamos los dos titulos de la cabecera centrados */
     text-align: center;
     margin-bottom: 30px;
 }
-a{
-  text-decoration: none;
+
+a {
+    /* Quitamos la decoracion de los enlaces(subrayado) */
+    text-decoration: none;
 }
 
-.ciclos{
+.ciclos {
+    /* Le hacemos una disposicion flex y centramos el contenido en el centro, este es el contenedor de la 
+  tabla de los ciclos */
     display: flex;
     justify-content: center;
     margin-top: 40px;
-    
-    
 }
-.profesores{
+
+.profesores {
+    /* Hacemos lo mismo que con el contenedor ciclos pero esta vez para el de los profesores */
     display: flex;
     justify-content: center;
-   
 }
 
 
+/* Creamos los estilos para la tabla */
 
-.tabla1 {    
-     font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
-    font-size: 12px;  
-    margin: 15px;    
-     width: 480px;
-      text-align: center;   
-     border-collapse: collapse; }
+.tabla1 {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 12px;
+    margin: 15px;
+    width: 50%;
+    text-align: center;
+    border-collapse: collapse;
+    /* La propiedad border-collapse se utiliza para fusionar los bordes. Ésto tiene una gran influencia
+      sobre la presentación y el estilo de las celdas de tabla. */
+}
 
-.tabla1 th {    
-     font-size: 13px;
-         font-weight: normal; 
-             padding: 8px;   
-               background: #b9c9fe;
-    border-top: 4px solid #aabcfe; 
-       border-bottom: 1px solid #fff; color: #039; }
 
-.tabla1 td {   
-     padding: 8px;   
-       background: #e8edff; 
-           border-bottom: 1px solid #fff;
-    color: #669;  
-      border-top: 1px solid transparent; }
+/* Creamos los estilos para las cabeceras de las columnas */
 
-.tabla1 tr:hover td { 
+.tabla1 th {
+    font-size: 13px;
+    font-weight: normal;
+    padding: 8px;
+    background: #b9c9fe;
+    border-top: 4px solid #aabcfe;
+    border-bottom: 1px solid #fff;
+    color: #039;
+}
+
+
+/* Creamos los estilos para los elementos de las filas */
+
+.tabla1 td {
+    padding: 8px;
+    background: #e8edff;
+    border-bottom: 1px solid #fff;
+    color: #669;
+    border-top: 1px solid transparent;
+}
+
+
+/* Hacemos un efecto para que cada vez que pase el raton por una fila resalte */
+
+.tabla1 tr:hover td {
     background: #d0dafd;
-     color: #339;
-     }
-    
+    color: #339;
+}
 
-.tabla2 {    
-        font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
-       font-size: 12px;  
-       margin: 45px;    
-        width: 480px;
-         text-align: center;   
-        border-collapse: collapse; }
-   
-   .tabla2 th {    
-        font-size: 13px;
-            font-weight: normal; 
-                padding: 8px;   
-                  background: #b9c9fe;
-       border-top: 4px solid #aabcfe; 
-          border-bottom: 1px solid #fff; color: #039; }
-   
-   .tabla2 td {   
-        padding: 8px;   
-          background: #e8edff; 
-              border-bottom: 1px solid #fff;
-       color: #669;  
-         border-top: 1px solid transparent; }
-   
-   .tabla2 tr:hover td { 
-       background: #d0dafd;
-        color: #339;
-        }
 
-.listaenlaces{
+/* A continuacion creamos el estilo para la tabla profesores que serán parecidos a los estilos de la 
+anterior tabla */
 
-        display: grid;
-    
-        grid-template-columns: repeat(2, 1fr);
-        /* distancia entre columnas */
-        gap: 400px;
-       
-       margin-top: 25px;
-        
-    }
+.tabla2 {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 12px;
+    margin: 45px;
+    width: 50%;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.tabla2 th {
+    font-size: 13px;
+    font-weight: normal;
+    padding: 8px;
+    background: #b9c9fe;
+    border-top: 4px solid #aabcfe;
+    border-bottom: 1px solid #fff;
+    color: #039;
+}
+
+.tabla2 td {
+    padding: 8px;
+    background: #e8edff;
+    border-bottom: 1px solid #fff;
+    color: #669;
+    border-top: 1px solid transparent;
+}
+
+.tabla2 tr:hover td {
+    background: #d0dafd;
+    color: #339;
+}
+
+
+/* Creamos los estilos para la lista y los enlaces */
+
+.listaenlaces {
+    display: grid;
+    /* Hacemos una disposicion grid para establecer dos columnas(listas y enlace ) */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    /* distancia entre columnas */
+    margin-top: 25px;
+}
 
 .lista1 {
-        counter-reset: li; 
-        list-style: none; 
-        *list-style: decimal; 
-        font: 15px 'trebuchet MS', 'lucida sans';
-        padding: 0;
-        margin-bottom: 4em;
-        text-shadow: 0 1px 0 rgba(255,255,255,.5);
-    }
-    
+    list-style: none;
+    font: 15px 'trebuchet MS', 'lucida sans';
+    padding: 0;
+    margin-bottom: 4em;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
+}
+
 .lista1 ul {
-        margin: 0 0 0 2em; 
-    }
-    
-.lista1 li{
-        position: relative;
-        display: block;
-        padding: .4em .4em .4em .4em;
-        *padding: .4em;
-        margin: .5em 0 .5em 2.5em;
-        background: #ddd;
-        color: #444;
-        text-decoration: none;
-        transition: all .3s ease-out;   
-    }
-    
-.lista1 li:hover{
-        background: #eee;
-    }   
-    
-.lista1 li:before{
-        
-        position: absolute; 
-        left: -2.5em;
-        top: 50%;
-        margin-top: -1em;
-        background: #fa8072;
-        height: 2em;
-        width: 2em;
-        line-height: 2em;
-        text-align: center;
-        font-weight: bold;
-    }
-    
-.lista1 li:after{
-        position: absolute; 
-        content: '';
-        border: .5em solid transparent;
-        left: -1em;
-        top: 50%;
-        margin-top: -.5em;
-        transition: all .3s ease-out;               
-    }
-    
-.lista1 li:hover:after{
-        left: -.5em;
-        border-left-color: #fa8072;             
-    }
-.lista1 h3{
+    margin: 0 0 0 2em;
+}
+
+.lista1 li {
+    position: relative;
+    display: block;
+    padding: .4em .4em .4em .4em;
+    *padding: .4em;
+    margin: .5em 0 .5em 2.5em;
+    background: #ddd;
+    color: #444;
+    text-decoration: none;
+    transition: all .3s ease-out;
+}
+
+.lista1 li:hover {
+    background: #eee;
+}
+
+
+/* Creamos el estilo de la lista para que haga un efecto de triangulo al seleccionarlo */
+
+.lista1 li:before {
+    position: absolute;
+    left: -2.5em;
+    top: 50%;
+    margin-top: -1em;
+    background: #fa8072;
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+    text-align: center;
+    font-weight: bold;
+}
+
+.lista1 li:after {
+    position: absolute;
+    content: '';
+    border: .5em solid transparent;
+    left: -1em;
+    top: 50%;
+    margin-top: -.5em;
+    transition: all .3s ease-out;
+}
+
+.lista1 li:hover:after {
+    left: -.5em;
+    border-left-color: #fa8072;
+}
+
+.lista1 h3 {
     text-align: center;
     margin-bottom: 10px;
 }
 
 
-form{
-	width:800px;
-	padding:16px;
-	border-radius:10px;
-	margin:auto;
-	background-color:#ccc;
+/* Para la imagen situada en la otra columna y que alberga un enlace, tan solo la ajustamos con 
+margin */
+
+.enlaces {
+    margin: auto;
+}
+
+
+/* Creamos el estilo para el formulario */
+
+form {
+    width: 70%;
+    padding: 16px;
+    border-radius: 10px;
+    /*Borde alredodor del formulario*/
+    margin: auto;
+    background-color: #ccc;
     text-align: center;
 }
 
-form legend{
-    color: red ;
-    font-size:18px;
+form legend {
+    color: red;
+    font-size: 18px;
 }
 
-form label{
-	width:720px;
-	font-weight:bold;
-	display:inline-block;
-    margin: 10px 10px ;
+form label {
+    width: 40%;
+    font-weight: bold;
+    display: inline-block;
+    margin: 10px 10px;
 }
 
-form input[type="text"],
-form input[type="email"]{
-	width:380px;
-	padding:3px 10px;
-	border:1px solid #f6f6f6;
-	border-radius:3px;
-	background-color:#f6f6f6;
-	margin:8px 10px ;
-	display:inline-block;
+form input[type="text"] {
+    width: 50%;
+    padding: 3px 10px;
+    border: 1px solid #f6f6f6;
+    border-radius: 3px;
+    background-color: #f6f6f6;
+    margin: 8px 10px;
+    display: inline-block;
 }
 
 form select {
-    border:1px solid #f6f6f6;
-	border-radius:3px;
-	background-color:#f6f6f6;
+    border: 1px solid #f6f6f6;
+    border-radius: 3px;
+    background-color: #f6f6f6;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-form input[type="submit"],form input[type="reset"]{
-	width:100%;
-	padding:8px 16px;
-	margin-top:5px;
-	border:1px solid royalblue;
-	border-radius:5px;
-	display:block;
-	color:#fff;
-	background-color: royalblue;
-} 
- 
-
-form input[type="submit"]:hover{
-	cursor:pointer;
+form input[type="submit"],
+form input[type="reset"] {
+    width: 100%;
+    padding: 8px 16px;
+    margin-top: 5px;
+    border: 1px solid royalblue;
+    border-radius: 5px;
+    display: block;
+    color: #fff;
+    background-color: royalblue;
 }
 
-textarea{
-	width:100%;
-	height:100px;
-	border:1px solid #f6f6f6;
-	border-radius:3px;
-	background-color:#f6f6f6;			
-	margin:8px 0;
-	/*resize: vertical | horizontal | none | both*/
-	resize:none;
-	display:block;
+form input[type="submit"]:hover {
+    cursor: pointer;
 }
 
+textarea {
+    width: 100%;
+    height: 100px;
+    border: 1px solid #f6f6f6;
+    border-radius: 3px;
+    background-color: #f6f6f6;
+    margin: 8px 0;
+    resize: none;
+    display: block;
+}
+
+
+/* A partir de aqui vamos a crear unos estilos dinamicos con css para los titulos de la cabecera */
 
 @font-face {
     font-family: 'Monoton';
     font-style: normal;
     font-weight: 400;
     src: local('Audiowide'), local('Audiowide-Regular'), url(http://themes.googleusercontent.com/static/fonts/audiowide/v2/8XtYtNKEyyZh481XVWfVOj8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
-  }
-  
+}
 
- 
-  
- 
-  /*neon effect*/
-  h1{
-    text-align:center;
-    font-size:7em;
-    margin:20px 0 20px 0;
-  }
-  h2 {
-    text-align:center;
-    font-size:2em;
-    margin:40px 0 20px 0;
-  }
-  h2{
-    text-decoration:none;
+
+/*neon effect*/
+
+h1 {
+    text-align: center;
+    font-size: 112px;
+    margin: 20px 0 20px 0;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2em;
+    margin: 40px 0 20px 0;
+}
+
+h2 {
+    text-decoration: none;
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
     transition: all 0.5s;
-  }
-  
-  h1, a{
-    text-decoration:none;
+}
+
+h1,
+a {
+    text-decoration: none;
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
     transition: all 0.5s;
-  }
-  
-  h1, a{
-    color:royalblue;
-    font-family:Monoton;
-  }
+}
 
-  h2{
-    color:royalblue;
-    font-family:Monoton;
-  }
+h1,
+a {
+    color: royalblue;
+    font-family: Monoton;
+}
 
-   h1, a:hover{
+h2 {
+    color: royalblue;
+    font-family: Monoton;
+}
+
+h1,
+a:hover {
     -webkit-animation: neon2 1.5s ease-in-out infinite alternate;
     -moz-animation: neon2 1.5s ease-in-out infinite alternate;
     animation: neon2 1.5s ease-in-out infinite alternate;
-  }
-  
- 
-  
- 
-  
-  h1, a:hover{
-  color:#ffffff;
-  }
-  
-  
-  
-  
-  
-  @-webkit-keyframes neon2 {
+}
+
+h1,
+a:hover {
+    color: #ffffff;
+}
+
+@-webkit-keyframes neon2 {
     from {
-      text-shadow: 0 0 10px #fff,
-                 0 0 20px  #fff,
-                 0 0 30px  #fff,
-                 0 0 40px  #228DFF,
-                 0 0 70px  #228DFF,
-                 0 0 80px  #228DFF,
-                 0 0 100px #228DFF,
-                 0 0 150px #228DFF;
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228DFF, 0 0 70px #228DFF, 0 0 80px #228DFF, 0 0 100px #228DFF, 0 0 150px #228DFF;
     }
     to {
-      text-shadow: 0 0 5px #fff,
-                 0 0 10px #fff,
-                 0 0 15px #fff,
-                 0 0 20px #228DFF,
-                 0 0 35px #228DFF,
-                 0 0 40px #228DFF,
-                 0 0 50px #228DFF,
-                 0 0 75px #228DFF;
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228DFF, 0 0 35px #228DFF, 0 0 40px #228DFF, 0 0 50px #228DFF, 0 0 75px #228DFF;
     }
-  }
-  
-  
-  
-  @-moz-keyframes neon2 {
+}
+
+@-moz-keyframes neon2 {
     from {
-      text-shadow: 0 0 10px #fff,
-                 0 0 20px  #fff,
-                 0 0 30px  #fff,
-                 0 0 40px  #228DFF,
-                 0 0 70px  #228DFF,
-                 0 0 80px  #228DFF,
-                 0 0 100px #228DFF,
-                 0 0 150px #228DFF;
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228DFF, 0 0 70px #228DFF, 0 0 80px #228DFF, 0 0 100px #228DFF, 0 0 150px #228DFF;
     }
     to {
-      text-shadow: 0 0 5px #fff,
-                 0 0 10px #fff,
-                 0 0 15px #fff,
-                 0 0 20px #228DFF,
-                 0 0 35px #228DFF,
-                 0 0 40px #228DFF,
-                 0 0 50px #228DFF,
-                 0 0 75px #228DFF;
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228DFF, 0 0 35px #228DFF, 0 0 40px #228DFF, 0 0 50px #228DFF, 0 0 75px #228DFF;
     }
-  }
-  
-  
-  
-  /*glow*/
-  
-  
-  @keyframes neon2 {
+}
+
+@keyframes neon2 {
     from {
-      text-shadow: 0 0 10px #fff,
-                 0 0 20px  #fff,
-                 0 0 30px  #fff,
-                 0 0 40px  #228DFF,
-                 0 0 70px  #228DFF,
-                 0 0 80px  #228DFF,
-                 0 0 100px #228DFF,
-                 0 0 150px #228DFF;
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228DFF, 0 0 70px #228DFF, 0 0 80px #228DFF, 0 0 100px #228DFF, 0 0 150px #228DFF;
     }
     to {
-      text-shadow: 0 0 5px #fff,
-                 0 0 10px #fff,
-                 0 0 15px #fff,
-                 0 0 20px #228DFF,
-                 0 0 35px #228DFF,
-                 0 0 40px #228DFF,
-                 0 0 50px #228DFF,
-                 0 0 75px #228DFF;
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228DFF, 0 0 35px #228DFF, 0 0 40px #228DFF, 0 0 50px #228DFF, 0 0 75px #228DFF;
     }
-  }
-  
- 
-  
+}
+
+
+/* Y ahora vamos a crear una parte de media-queries para que nuestro documento se vea bien en dispositivos
+moviles */
+
+@media (max-width: 700px) {
+    .listaenlaces {
+        /* Por debajo de 700px reducimos a 1 columna el grupo lista enlaces  */
+        grid-template-columns: repeat(1, 1fr);
+        margin-bottom: 40px;
+    }
+    /* Reducimos el tamaño de las listas al 70% de la pantalla */
+    .lista1 {
+        width: 70%;
+        margin: auto;
+    }
+    /* Reducimos el tamaño del titulo de la cabecera  */
+    h1 {
+        font-size: 40px;
+    }
+    form select {
+        width: 70%;
+    }
+}
