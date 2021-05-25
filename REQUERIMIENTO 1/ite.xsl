@@ -22,7 +22,7 @@
           </h2>
         </header>
         <div class="ciclos">
-          <table border="2">
+          <table class="tabla2">
             <th colspan="4">CICLOS GRADO SUPERIOR</th>
             <tr>
 
@@ -62,7 +62,7 @@
           </table>
         </div>
         <div class="profesores">
-          <table border="1">
+          <table class="tabla1">
             <th colspan="2">PROFESORES</th>
             <tr>
               <th>ID</th>
@@ -82,14 +82,19 @@
           </table>
         </div>
 
-        
+        <div class="listaenlaces">
+         
+
+          
         <div class="administracion">
-          <ul>
+         
+          <ul class="lista1">
             <h3>
           ADMINISTRACIÓN INSTITUTO
-      </h3>
-            <ul>
-              DIRECCION
+           </h3>
+            <ul >
+              <h4> DIRECCION</h4>
+             
               <li>
                 Nombre:
                 <xsl:value-of select="ite/director/nombre" />
@@ -99,8 +104,9 @@
                 <xsl:value-of select="ite/director/despacho" />
               </li>
             </ul>
-            <ul>
-              JEFATURA DE ESTUDIOS
+            <ul >
+              <h4>JEFATURA DE ESTUDIOS</h4>
+              
               <li>
                 Nombre:
                 <xsl:value-of select="ite/jefe_estudios/nombre" />
@@ -113,9 +119,9 @@
 
 
           </ul>
-
+        
         </div>
-
+      
         <div class="enlaces">
           <a>
             <xsl:attribute name="href">
@@ -132,6 +138,8 @@
             <xsl:value-of select="ite/empresa" />
           </a>
         </div>
+      
+      </div>
 
         <div class="formulario">
           <form action="procesarformulario.jsp" method="get">

@@ -18,9 +18,145 @@ h1 , h2{
     display: flex;
     justify-content: center;
     margin-top: 40px;
-    margin-bottom: 40px;
+    
     
 }
 .profesores{
-   margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+   
+}
+
+
+
+.tabla1 {    
+     font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 12px;  
+    margin: 15px;    
+     width: 480px;
+      text-align: center;   
+     border-collapse: collapse; }
+
+.tabla1 th {    
+     font-size: 13px;
+         font-weight: normal; 
+             padding: 8px;   
+               background: #b9c9fe;
+    border-top: 4px solid #aabcfe; 
+       border-bottom: 1px solid #fff; color: #039; }
+
+.tabla1 td {   
+     padding: 8px;   
+       background: #e8edff; 
+           border-bottom: 1px solid #fff;
+    color: #669;  
+      border-top: 1px solid transparent; }
+
+.tabla1 tr:hover td { 
+    background: #d0dafd;
+     color: #339;
+     }
+    
+
+.tabla2 {    
+        font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+       font-size: 12px;  
+       margin: 45px;    
+        width: 480px;
+         text-align: center;   
+        border-collapse: collapse; }
+   
+   .tabla2 th {    
+        font-size: 13px;
+            font-weight: normal; 
+                padding: 8px;   
+                  background: #b9c9fe;
+       border-top: 4px solid #aabcfe; 
+          border-bottom: 1px solid #fff; color: #039; }
+   
+   .tabla2 td {   
+        padding: 8px;   
+          background: #e8edff; 
+              border-bottom: 1px solid #fff;
+       color: #669;  
+         border-top: 1px solid transparent; }
+   
+   .tabla2 tr:hover td { 
+       background: #d0dafd;
+        color: #339;
+        }
+
+.listaenlaces{
+
+        display: grid;
+    
+        grid-template-columns: repeat(2, 1fr);
+        /* distancia entre columnas */
+        gap: 400px;
+       
+       margin-top: 25px;
+        
+    }
+
+.lista1 {
+        counter-reset: li; 
+        list-style: none; 
+        *list-style: decimal; 
+        font: 15px 'trebuchet MS', 'lucida sans';
+        padding: 0;
+        margin-bottom: 4em;
+        text-shadow: 0 1px 0 rgba(255,255,255,.5);
+    }
+    
+.lista1 ul {
+        margin: 0 0 0 2em; 
+    }
+    
+.lista1 li{
+        position: relative;
+        display: block;
+        padding: .4em .4em .4em .4em;
+        *padding: .4em;
+        margin: .5em 0 .5em 2.5em;
+        background: #ddd;
+        color: #444;
+        text-decoration: none;
+        transition: all .3s ease-out;   
+    }
+    
+.lista1 li:hover{
+        background: #eee;
+    }   
+    
+.lista1 li:before{
+        
+        position: absolute; 
+        left: -2.5em;
+        top: 50%;
+        margin-top: -1em;
+        background: #fa8072;
+        height: 2em;
+        width: 2em;
+        line-height: 2em;
+        text-align: center;
+        font-weight: bold;
+    }
+    
+.lista1 li:after{
+        position: absolute; 
+        content: '';
+        border: .5em solid transparent;
+        left: -1em;
+        top: 50%;
+        margin-top: -.5em;
+        transition: all .3s ease-out;               
+    }
+    
+.lista1 li:hover:after{
+        left: -.5em;
+        border-left-color: #fa8072;             
+    }
+.lista1 h3{
+    text-align: center;
+    margin-bottom: 10px;
 }
