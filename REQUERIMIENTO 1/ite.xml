@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="ite.xsl"?> 
 
+<!-- Asociamos de forma permanente nuestra hoja de estilo XSLT al documento XML mediante la instrucción 
+    de procesamiento <?xml-stylesheet ?>, la misma que permite asociar hojas de estilo CSS.
+    La instrucción de procesamiento <?xml-stylesheet ... ?> va al principio del documento, después de
+     la declaración XML. -->
+<!-- Partimos del texto ejemplo que nos dan en el enunciado de la actividad -->
+
 <ite nombre="Instituto Tecnológico Edix" web="https://institutotecnologico.edix.com" >
 
     <empresa>Proeduca</empresa>
