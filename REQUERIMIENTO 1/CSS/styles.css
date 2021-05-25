@@ -1,0 +1,26 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+body{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15 px;
+    background-color:antiquewhite;
+}
+
+h1 , h2{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.ciclos{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    
+}
+.profesores{
+   margin-bottom: 40px;
+}
