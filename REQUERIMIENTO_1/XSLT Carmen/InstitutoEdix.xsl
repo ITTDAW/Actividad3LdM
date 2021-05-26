@@ -102,34 +102,34 @@
           
         <div class="administracion">
          
-          <ul class="lista1">
-            <h3>ADMINISTRACIÓN INSTITUTO</h3>
-            <ul class="directora">
-              <h4> DIRECCION</h4>
-                <li>
-                  Nombre:
-                  <xsl:value-of select="ite/director/nombre" />
-                </li>
-                <li>
-                  Despacho:
-                  <xsl:value-of select="ite/director/despacho" />
-                </li>
-            </ul>
-            <ul class="jefatura">
-              <h4>JEFATURA DE ESTUDIOS</h4>
-              
-                <li>
-                  Nombre:
-                  <xsl:value-of select="ite/jefe_estudios/nombre" />
-                </li>
-                <li>
-                  Despacho:
-                  <xsl:value-of select="ite/jefe_estudios/despacho" />
-                </li>
-            </ul>
+            <ul class="lista1">
+              <h3>ADMINISTRACIÓN INSTITUTO</h3>
+              <ul class="directora">
+                <h4> DIRECCION</h4>
+                  <li>
+                    Nombre:
+                    <xsl:value-of select="ite/director/nombre" />
+                  </li>
+                  <li>
+                    Despacho:
+                    <xsl:value-of select="ite/director/despacho" />
+                  </li>
+              </ul>
+              <ul class="jefatura">
+                <h4>JEFATURA DE ESTUDIOS</h4>
+                
+                  <li>
+                    Nombre:
+                    <xsl:value-of select="ite/jefe_estudios/nombre" />
+                  </li>
+                  <li>
+                    Despacho:
+                    <xsl:value-of select="ite/jefe_estudios/despacho" />
+                  </li>
+              </ul>
 
 
-          </ul>
+            </ul>
         
         </div>
       
@@ -152,7 +152,7 @@
         <div class="formulario">
           <form action="procesarformulario.jsp" method="get">
             <legend>Encuesta de Satisfacción</legend>
-            <fieldset>
+            
               <label for="nombre">Nombre Alumno: </label>
 
 
@@ -164,7 +164,7 @@
 
               <label for="ciclo"> Ciclo matriculado </label>
 
-              <select name="ciclo">
+              <select name="ciclo" class="select_ciclo">
                 <xsl:for-each select="ite/ciclos/ciclo">
                   <option>
                     <xsl:value-of select="nombre" />
@@ -173,7 +173,7 @@
               </select>
               <br />
               <label for="profe">Profesor a puntuar</label>
-              <select name="profesor" id="prof">
+              <select name="profesor" id="prof" class="select_ciclo">
                 <xsl:for-each select="ite/profesores/profesor">
                   <option>
                     <xsl:value-of select="nombre" />
@@ -214,7 +214,7 @@
               <input type="submit" value="Enviar encuesta" />
 
               <input type="reset" value="Limpiar encuesta" />
-            </fieldset>
+            
           </form>
         </div>
       </div>

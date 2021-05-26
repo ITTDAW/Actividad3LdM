@@ -20,6 +20,7 @@ body{
 h1 , h2{
 
     text-align: center;
+    padding: 5%;
     
 }
 a{
@@ -37,7 +38,7 @@ a{
 .tabla1 {    
     font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
     font-size: 12px;  
-    margin: 15px;  
+    margin: 15px auto;  
     width: 70%;  
     text-align: center;   
     border-collapse: collapse; }
@@ -66,7 +67,7 @@ a{
 .tabla2 {    
       font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
       font-size: 12px;  
-      margin: 45px;    
+      margin: auto;    
       width: 70%;
       text-align: center;   
       border-collapse: collapse; }
@@ -91,13 +92,7 @@ a{
         color: #339;
         }
 
-.listaenlaces{
 
-        display: flex;
-        justify-content: center;
-        margin-top: 25px;
-        
-    }
 
 .lista1 {
 
@@ -106,9 +101,12 @@ a{
         list-style: none; 
         *list-style: decimal; 
         font: 15px 'trebuchet MS', 'lucida sans';
-        padding: 0;
         margin-bottom: 4em;
         text-shadow: 0 1px 0 rgba(255,255,255,.5);
+        justify-content: center;
+        margin: 30px auto;
+        width: 100%;
+        
     }
     
 
@@ -164,46 +162,34 @@ a{
     letter-spacing: 1.5px;
     padding: 30px 0;
 }
-.administracion {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-}
-.directora {
-  padding-top: 15px;
-  text-align: center;
-  display: inline-block;
-  
-}
-.jefatura {
-  padding-top: 15px;
-  text-align: center;
-  display: inline-block;
-  
-}
 
+.directora, .jefatura {
+  padding-top: 15px;
+  margin: auto;
+  text-align: center;
+  display: inline-block;
+  
+}
 
 form{
-	width:800px;
-	padding:16px;
-	border-radius:10px;
-	margin:auto;
+	width:90%;
+	margin: 50px auto;
 	background-color:#ccc;
-    text-align: center;
+  text-align: center;
 }
 
 form legend{
   padding-bottom: 20px;
-    color: red ;
-    font-size:18px;
-    font-weight: 800;
+  color: red ;
+  font-size:20px;
+  font-weight: 800;
 }
 
 form label{
-	width:720px;
+	width:auto;
 	font-weight:bold;
-	display:inline-block;
-    margin: 10px 10px ;
+	display:block;
+  margin: 10px 10px ;
 }
 
 form input[type="text"],
@@ -217,7 +203,10 @@ form input[type="email"]{
 	display:inline-block;
 }
 
-form select {
+
+.select_profe, .select_ciclo {
+  display: block;
+  margin: auto;
     border:1px solid #f6f6f6;
 	border-radius:3px;
 	background-color:#f6f6f6;
@@ -299,7 +288,7 @@ textarea{
     font-family:Monoton;
   }
 
-   h1, a:hover{
+   h1, a:hover, legend{
     -webkit-animation: neon2 1.5s ease-in-out infinite alternate;
     -moz-animation: neon2 1.5s ease-in-out infinite alternate;
     animation: neon2 1.5s ease-in-out infinite alternate;
@@ -313,22 +302,6 @@ textarea{
   color:#ffffff;
   }
   
-  /*MEDIA QUERIES*/
-
-  @media (max-width: 768px) {
- 
-  a {
-    font-size: 35px;
-  }
-  .ciclos{
-
-   
-    justify-content: center;
-    margin-top: 40px;
-    
-}
- 
-}
   
   
   
@@ -409,4 +382,22 @@ textarea{
   }
   
  
-  
+
+
+
+ /*MEDIA QUERIES*/
+
+  @media (max-width: 768px) {
+ 
+  a {
+    font-size: 35px;
+  }
+  .ciclos{
+
+   
+    justify-content: center;
+    margin-top: 40px;
+    
+}
+ 
+}
