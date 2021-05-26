@@ -197,7 +197,7 @@
               <br />
               <label for="dirigida">Enviar la encuesta a que persona: </label>
               <br/>
-              <select name="dirige" id="env">
+              <select name="dirige" id="env" class="select_dirige">
                 <option value="director">
                   <xsl:value-of select="ite/director/nombre" />
                 </option>
