@@ -114,7 +114,7 @@
 
           <div class ="admin">
             <ul class="lista1">
-              <h3>ADMINISTRACION</h3>
+              <h3>ADMINISTRACIÓN</h3>
               <li>
                 <h4>DIRECTOR</h4>
                 <a>
