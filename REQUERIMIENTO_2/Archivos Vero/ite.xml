@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ite.xsl"?> 
+
+<!-- Asociamos de forma permanente nuestra hoja de estilo XSLT al documento XML mediante la instrucción 
+    de procesamiento <?xml-stylesheet ?>, la misma que permite asociar hojas de estilo CSS.
+    La instrucción de procesamiento <?xml-stylesheet ... ?> va al principio del documento, después de
+     la declaración XML. -->
+<!-- Partimos del texto ejemplo que nos dan en el enunciado de la actividad -->
+
+<ite nombre="Instituto Tecnológico Edix">
+
+    <empresa>Proeduca</empresa>
+
+    <web>https://institutotecnologico.edix.com</web>
+
+    <equipo>
+    <profesores>
+
+                   <profesor>
+
+                                   <id>1</id>
+
+                                   <nombre>Félix de Pablo Lobo</nombre>
+                                   <cv>Profesor en los ciclos formativos de grado superior de movilidad y de desarrollo web (DAM y DAW).</cv>
+                                   <enlace>https://www.linkedin.com/in/felix-de-pablo-lobo/</enlace>
+
+
+                   </profesor>
+
+                   <profesor>
+
+                                   <id>2</id>
+
+                                   <nombre>Raúl Salgado Vilas</nombre>
+                                   <cv>Profesor titular en Ciclos de Formación Profesional Superior del Instituto Tecnológico de Telefónica en las asignaturas de Programación , BBDD , Lenguaje de Marcas y Entornos de Sistemas Empresariales.</cv>
+                                   <enlace>https://www.linkedin.com/in/raul-salgado-vilas-5719a413/?originalSubdomain=es</enlace>
+
+                   </profesor>
+
+                   <profesor>
+
+                                   <id>3</id>
+
+                                   <nombre>Raquel Cerdá Losa</nombre>
+                                   <cv>Profesora titular en Ciclos de Formación Profesional ( ASIR , DAM)  </cv>
+                                   <enlace>https://www.linkedin.com/in/raquel-cerd%C3%A1-losa-753110b6/</enlace>
+
+
+                   </profesor>
+
+                   <profesor>
+
+                                   <id>4</id>
+
+                                   <nombre>Tomás Escudero Delgado</nombre>
+                                   <cv>Profesor titular en Ciclos de Formación Profesional ( ASIR , DAM)</cv>
+                                   <enlacel>https://www.linkedin.com/in/tom%C3%A1s-escudero-delgado-2032872b/?originalSubdomain=es</enlacel>
+
+
+                   </profesor>
+
+    </profesores>
+
+    <director>
+
+                   <nombre>Ascensión Bláquez</nombre>
+
+                   <cv>Siempre pendiente de la innovación educativa, es la directora del Instituto Tecnológico. 
+                       Toda una vida dedicada a la educación reglada y muy comprometida con integrar en las aulas 
+                       la última tecnología que permita a los alumnos avanzar en este mundo digital.
+                   </cv>
+
+                   <enlace>https://www.linkedin.com/in/chon-bl%C3%A1zquez-620133a/</enlace>
+
+                   <despacho>Numero 31, 3ª Planta, Edificio A</despacho>
+
+                   
+
+    </director>
+    
+
+    <jefe_estudios>
+
+                   <nombre>Daniel Díaz</nombre>
+
+                   <cv>Es nuestro jefe de estudios en el Instituto Tecnológico. ¿Y eso qué significa? Pues que Dani está para lo que necesitéis. 
+                       Siempre al día de lo que pasa en el mundo de la FP, podría pasarse horas hablando de ello.
+                   </cv>
+
+                   <enlace>https://www.linkedin.com/in/jos%C3%A9-daniel-d%C3%ADaz-48371511/</enlace>
+
+                   <despacho>Numero 27, 2ª Planta, Edificio B</despacho>
+
+    </jefe_estudios>
+
+    </equipo>
+
+    <grados_superiores>
+
+                   <ciclo_DAW id="DAW" enlace="https://www.edix.com/es/fp/daw-desarrollo-de-aplicaciones-web/">
+
+                                   <nombre>Desarrollo de Aplicaciones Web</nombre>
+
+                                   <grado>Superior</grado>
+
+                                   <decretoTitulo año="2010" />
+
+                   </ciclo_DAW>
+
+                   <ciclo_DAM id="DAM" enlace="https://www.edix.com/es/fp/desarrollo-de-aplicaciones-multiplataforma-dam/">
+
+                                   <nombre>Desarrollo de Aplicaciones Multiplataforma</nombre>
+
+                                   <grado>Superior</grado>
+
+                                   <decretoTitulo año="2012" />
+
+                   </ciclo_DAM>
+
+    </grados_superiores>
+
+    <telefono>+34 91 787 39 91</telefono>
+    
+</ite>
