@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="instiTec.xsl"?>
+
+<!-- Asociamos de forma permanente nuestra hoja de estilo XSLT al documento XML mediante la instrucción 
+    de procesamiento <?xml-stylesheet ?>, la misma que permite asociar hojas de estilo CSS.
+    La instrucción de procesamiento <?xml-stylesheet ... ?> va al principio del documento, después de
+     la declaración XML. -->
+<!-- Partimos del texto ejemplo que nos dan en el enunciado de la actividad -->
+
+<ite nombre="Instituto Tecnológico Edix" web="https://institutotecnologico.edix.com">
+
+    <empresa web="https://proeduca.es">Proeduca</empresa>
+
+    <telefono>+34 91 787 39 91</telefono>
+    <personal>
+        <docencia>
+            <profesor>
+
+                <id>1</id>
+
+                <nombre link="https://www.linkedin.com/in/felix-de-pablo-lobo/?originalSubdomain=es">Félix</nombre>
+
+                <modulos>
+                                       Entornos de Desarrollo // Sistemas Informáticos 
+                                   </modulos>
+            </profesor>
+
+            <profesor>
+
+                <id>2</id>
+
+                <nombre link="https://www.linkedin.com/in/raul-salgado-vilas-5719a413/">Raúl</nombre>
+
+                <modulos>
+                                       BBDD // Programación
+                                   </modulos>
+            </profesor>
+
+            <profesor>
+
+                <id>3</id>
+
+                <nombre link="https://www.linkedin.com/in/raquel-cerd%C3%A1-losa-753110b6/">Raquel</nombre>
+
+                <modulos>
+                                       Sistemas Informáticos
+                                   </modulos>
+            </profesor>
+
+            <profesor>
+
+                <id>4</id>
+
+                <nombre link="https://www.linkedin.com/in/tom%C3%A1s-escudero-delgado-2032872b/">Tomás</nombre>
+                <modulos>
+                                        Programación // FCT
+                                    </modulos>
+            </profesor>
+
+        </docencia>
+        <administracion>
+            <director>
+
+                <nombre link="https://es.linkedin.com/in/chon-bl%C3%A1zquez-620133a">Chon</nombre>
+
+                <despacho>Numero 31, 3ª Planta, Edificio A</despacho>
+
+
+            </director>
+
+
+            <jefe_estudios>
+
+                <nombre link="https://es.linkedin.com/in/jos%C3%A9-daniel-d%C3%ADaz-48371511">Dani</nombre>
+
+                <despacho>Numero 27, 2ª Planta, Edificio B</despacho>
+
+            </jefe_estudios>
+        </administracion>
+    </personal>
+    <ciclos>
+
+        <ciclo id="ASIR">
+
+            <nombre info="https://www.todofp.es/que-como-y-donde-estudiar/que-estudiar/familia/loe/informatica-comunicaciones/admin-sist-informaticos-red.html">Administración de Sistemas Informáticos en Red</nombre>
+
+            <grado>Superior</grado>
+
+            <decretoTitulo año="2009" />
+
+        </ciclo>
+
+        <ciclo id="DAW">
+
+            <nombre info="https://www.todofp.es/que-como-y-donde-estudiar/que-estudiar/familia/loe/informatica-comunicaciones/des-aplicaciones-web.html">Desarrollo de Aplicaciones Web</nombre>
+
+            <grado>Superior</grado>
+
+            <decretoTitulo año="2010" />
+
+        </ciclo>
+
+        <ciclo id="DAM">
+
+            <nombre info="https://www.todofp.es/que-como-y-donde-estudiar/que-estudiar/familia/loe/informatica-comunicaciones/des-aplicaciones-multiplataforma.html">Desarrollo de Aplicaciones Multiplataforma</nombre>
+
+            <grado>Superior</grado>
+
+            <decretoTitulo año="2010" />
+
+        </ciclo>
+
+    </ciclos>
+
+</ite>
