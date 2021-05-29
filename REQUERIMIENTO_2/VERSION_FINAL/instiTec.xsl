@@ -264,7 +264,7 @@
               <label for="profe">Profesor a puntuar</label>
               <br />
               <select name="profesor" id="prof">
-                <xsl:for-each select="ite/profesores/profesor">
+                <xsl:for-each select="ite/personal/docencia/profesor">
                   <option>
                     <xsl:value-of select="nombre" />
                   </option>
@@ -308,10 +308,10 @@
               <!-- Aqui hacemos otro select para elegir a la persona que enviar la encuesta -->
               <select name="dirige" id="env">
                 <option value="director">
-                  <xsl:value-of select="ite/director/nombre" />
+                  <xsl:value-of select="ite/personal/administracion/director" />
                 </option>
                 <option value="jefe">
-                  <xsl:value-of select="ite/jefe_estudios/nombre" selected="yes" />
+                  <xsl:value-of select="ite/personal/administracion/jefe_estudios" selected="yes" />
                 </option>
               </select>
               <br />
